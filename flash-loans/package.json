@@ -13,5 +13,9 @@
     "@aave/core-v3": "^1.18.0",
     "@openzeppelin/contracts": "^4.9.3",
     "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.17.4"
   }
 }
