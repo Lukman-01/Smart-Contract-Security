@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.17;
+pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
@@ -19,7 +19,7 @@ contract LW3NFT is
         // Note how instead of using the ERC721() constructor, we have to manually initialize it
         // Same goes for the Ownable contract where we have to manually initialize it
         __ERC721_init("LW3NFT", "LW3NFT");
-        __Ownable_init();
+        __Ownable_init(msg.sender);
         _mint(msg.sender, 1);
     }
 
